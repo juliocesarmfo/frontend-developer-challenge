@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<title>Desafio | Frontend Developer</title>
+		<script type="text/javascript" src="js/global_scripts.js"></script>
+		<script type="text/javascript" src="js/products_scripts.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="icon" type="image/png" sizes="32x32" href="https://www.linx.com.br/app/themes/linx/dist/images/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="https://www.linx.com.br/app/themes/linx/dist/images/favicons/android-icon-192x192.png">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<header>
+			<h2>Uma seleção de produtos</h2>
+			<h1><strong>Especial para você</strong></h1>
+			<p>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
+			<nav>
+				<a href="linx.com.br">Conheça a Linx</a>
+				<a href="#">Ajude o algorítimo</a>
+				<a href="#">Seus produtos</a>
+				<a href="#">Compartilhe</a>
+			</nav>
+		</header>
+		<main>
+			<p>Sua seleção especial</p>
+			<div class="shop-container"></div>
+			<button id="show-more-button" onclick="openMore()">Ainda mais produtos aqui!</button>
+			<h2 id="compartilhe-novidade">Compartilhe a novidade</h2>
+			<p id="form-text">Quer que seus amigos também ganhem a lista personalizada deles?
+			Preencha agora!</p>
+			<form>
+				<div class="fields">
+					<p>Nome do seu amigo:</p>
+					<input type="text" minlength="1" maxlength="80" required>
+				</div>
+				<div class="fields">
+					<p>E-mail:</p>
+					<input type="email" minlength="5" maxlength="80" required>
+				</div>
+			</form>
+			<button id="send-form">Enviar Agora</button>
+		</main>
+		<footer>
+			<p>Testando suas habilidades em HTML, CSS e JS.<br>
+			Linx Impulse<br>
+			2019</p>
+		</footer>
+	</body>
+</html>
