@@ -1,8 +1,9 @@
 /***************
 * 
-* Variáveis para paleta de cores
+* Using variables to assign hex color values
 *
 ***************/
+
 :root {
 	--dark-gray: #707070;
 	--light-gray: #888888;
@@ -18,7 +19,7 @@ body {
 
 /***************
 * 
-* Início Header 
+* Header Tag 
 *
 ***************/
 
@@ -62,14 +63,15 @@ header p, #form-text {
 	margin: -20px 0 20px 0;
 	text-align: center;
 }
+
 /***************
 * 
-* Fim Header
+* End Header Tag
 *
 ***************/
 /***************
 * 
-* Início Nav 
+* Nav Tag 
 *
 ***************/
 
@@ -98,12 +100,12 @@ nav a {
 
 /***************
 * 
-* Fim Nav 
+* End Nav Tag 
 *
 ***************/
 /***************
 * 
-* Início Main 
+* Main Tag
 *
 ***************/
 
@@ -115,13 +117,23 @@ main {
 	justify-content: center;
 }
 
-main p, #compartilhe-novidade {
+main p, #share-news {
 	text-align: center;
 	margin-top: 50px;
 	font-weight: 500;
 	font-size: 18px;
 	color: var(--light-gray);
 }
+
+.product-image, form input, .buy-button, #show-more-button, #show-less-button, #send-form {
+	border: 1px solid var(--dark-gray);
+}
+
+/***************
+* 
+* Shop/Products Containers
+*
+***************/
 
 .shop-container {
 	display: flex;
@@ -134,6 +146,7 @@ main p, #compartilhe-novidade {
 	width: 80vw;
 	max-width: 900px;
 	height: auto;
+	transition: 0.4s;
 }
 
 .product-container {
@@ -144,6 +157,7 @@ main p, #compartilhe-novidade {
 	width: 200px;
 	height: 350px;
 	background: white;
+	animation: slide-up-anim 0.4s ease;
 }
 
 .product-image {
@@ -203,7 +217,13 @@ main p, #compartilhe-novidade {
 	font-size: 16px;
 }
 
-#compartilhe-novidade {
+/***************
+* 
+* Form Tag
+*
+***************/
+
+#share-news {
 	margin-top: 200px;
 	font-size: 18px;
 }
@@ -220,7 +240,6 @@ main form {
 	padding: 10px;
 }
 
-
 form input {
 	position: relative;
 	height: 30px;
@@ -236,8 +255,8 @@ form input:invalid {
 form p {
 	text-align: left;
 	font-size: 12px;
-	font-weight: 400;
-	margin: 0 20px;
+	font-weight: 500;
+	margin: -5px 20px;
 }
 
 #send-form {
@@ -248,18 +267,19 @@ form p {
 	line-height: 40px;
 }
 
-.product-image, form input, .buy-button, #show-more-button, #show-less-button, #send-form {
-	border: 1px solid var(--dark-gray);
-}
-
 /***************
 * 
-* Fim Main 
+* End Form Tag
 *
 ***************/
 /***************
 * 
-* Início Footer 
+* End Main Tag 
+*
+***************/
+/***************
+* 
+* Footer Tag
 *
 ***************/
 
@@ -282,7 +302,7 @@ footer p {
 
 /***************
 * 
-* Fim Footer 
+* End Footer Tag 
 *
 ***************/
 /***************
@@ -291,7 +311,7 @@ footer p {
 *
 ***************/
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 850px) {
 	main form {
 		width: auto;
 		display: flex;
@@ -301,7 +321,19 @@ footer p {
 	}
 	
 	.fields input {
-		max-width: 15rem;
+		max-width: 20rem;
+	}
+
+	main button {
+		max-width: 9rem;
+	}
+
+	#show-more-button, #show-less-button {
+		min-width: 15rem;
+	}
+
+	.buy-button {
+		min-width: 100%;
 	}
 }
 
@@ -325,5 +357,22 @@ footer p {
 @media only screen and (max-width: 412px) {
 	header {
 		height: 35rem;
+	}
+}
+
+/***************
+* 
+*  @keyframes
+*
+***************/
+
+@keyframes slide-up-anim {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
