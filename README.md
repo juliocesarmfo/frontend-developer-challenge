@@ -1,3 +1,17 @@
+**Editado por Júlio César Maria Filho:**
+
+> **Atenção:** Para abrir este website de maneira correta, faça o download de todos os arquivos e abra o index.html, caso contrário, coloque todos os arquivos e diretórios na pasta root de seu servidor HTTP.
+
+> Live Preview: https://vibrant-panini-3bcee5.netlify.com/
+
+> Observação: A fonte original que foi utilizada no layout do link abaixo (Helvetica Neue) é uma premium font, isto é, não pude utilizá-la no projeto. Ao invés disso, tomei a liberdade de alterar a mesma para Roboto, uma fonte lançada sob licença Apache e totalmente gratuita.
+
+## Changelog:
+
+> 24/01/2020: Commit da primeira versão do website. Já está responsivo para mobile, com a listagem de produtos funcionando (show more & show less). No próximo commit será incrementado outras meta tags e refinamento no newsletter;
+
+---
+
 # Desafio | Frontend Developer
 
 > **ATENÇÃO:** Antes de começar, se [cadastre na vaga](https://linxneemuchaordic.recruiterbox.com/) via Recruiterbox **=]**
@@ -70,15 +84,3 @@ A sua forma de priorizar a entrega também vai ser considerada. Escreva no READM
 Em caso de dúvidas, [abra uma issue](https://github.com/chaordic/frontend-intern-challenge/issues).
 
 **Boa sorte =]**
-
----
-
-**Editado por Júlio César Maria Filho:**
-
-> **Atenção:** Para abrir este website de maneira correta, faça o download de todos os arquivos e abra o index.html, caso contrário, coloque todos os arquivos e diretórios na pasta root de seu servidor HTTP.
-
-> Live Preview: https://vibrant-panini-3bcee5.netlify.com/
-
-## Changelog:
-
-> 24/01/2020: Commit da primeira versão do website. Já está responsivo para mobile, com a listagem de produtos funcionando (show more & show less). No próximo commit será incrementado outras meta tags e refinamento no newsletter;
