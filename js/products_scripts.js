@@ -12,6 +12,7 @@ function showItems(data) {
 		const productCurrentPrice = document.createElement(`h6`);
 		const productPriceSubdivision = document.createElement(`p`);
 		const productBuyButton = document.createElement(`button`);
+		const valueStr = data.products[i].installments.value;
 		/* Atribuindo a classname de cada elemento criado */
 		productContainerCreat.className = `product-container`;
 		productImg.className = `product-image`;
@@ -36,7 +37,14 @@ function showItems(data) {
 		productDescription.innerHTML = data.products[i].description;
 		productOriginalPrice.innerHTML = `De: R$` + data.products[i].oldPrice + `,00`;
 		productCurrentPrice.innerHTML = `Por: R$` + data.products[i].price + `,00`;
-		productPriceSubdivision.innerHTML = (`ou ` + data.products[i].installments.count + `x de R$` + data.products[i].installments.value).replace(`.`, `,`);
+		/* Tratamento do valor da parcela */
+		if (Number.isInteger(valueStr)) {
+			productPriceSubdivision.innerHTML = `ou ` + data.products[i].installments.count + `x de R$` + data.products[i].installments.value + `,00`;
+		}
+		else {
+			productPriceSubdivision.innerHTML = (`ou ` + data.products[i].installments.count + `x de R$` + data.products[i].installments.value).replace(`.`, `,`) + `0`;
+		}
+		/* */
 		productBuyButton.innerHTML = `Comprar`;
 	}
 }
