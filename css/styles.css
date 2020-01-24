@@ -222,13 +222,13 @@ main form {
 
 form input {
 	position: relative;
-	height: 20px;
+	height: 30px;
 	width: 350px;
 	margin: 15px 20px;
 	align-self: flex-start;
 }
 
-form input:invalid p {
+form input:invalid {
 	color: var(--light-gray);
 }
 
@@ -236,7 +236,7 @@ form p {
 	text-align: left;
 	font-size: 12px;
 	font-weight: 400;
-	margin: 0px 20px;
+	margin: 0 20px;
 }
 
 #send-form {
@@ -292,10 +292,15 @@ footer p {
 
 @media only screen and (max-width: 840px) {
 	main form {
+		width: auto;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: center;
+	}
+	
+	.fields input {
+		max-width: 15rem;
 	}
 }
 
@@ -321,4 +326,3 @@ footer p {
 		height: 35rem;
 	}
 }
-
