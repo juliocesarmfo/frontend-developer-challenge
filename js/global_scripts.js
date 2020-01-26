@@ -20,8 +20,9 @@ function openMore() {
 }
 /* Function to show less products */
 function showLess() {
-	for (let i = 8; i < 16; i++) {
-		document.getElementsByClassName(`product-container`)[8].remove();
+	for (let i = 15; i > 7; i--) {
+		document.getElementsByClassName(`product-container`)[i].style.animation = `fade-out-anim 0.3s linear`;
+		setTimeout(function(){document.getElementsByClassName(`product-container`)[i].remove();}, 300);
 	}
 	document.getElementById(`show-less-button`).id = `show-more-button`;
 	document.getElementById(`show-more-button`).innerHTML = `Ainda mais produtos aqui!`;
