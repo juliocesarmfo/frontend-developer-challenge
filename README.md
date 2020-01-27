@@ -9,7 +9,8 @@ Live Preview: https://vibrant-panini-3bcee5.netlify.com/
 ## Changelog:
 
 - **24/01/2020** | *Commit* da primeira versão do *website*. Já está responsivo para *mobile*, com a listagem de produtos funcionando *(show more & show less)* e *newsletter* pronto. Para os próximos *commits*, ajustar keyframe para *show less products*.
-- **25/01/2020** | Último *commit* realizado com a animação de *show less products* pronta.
+- **25/01/2020** | *Commit* realizado com a animação de *show less products* pronta.
+- **27/01/2020** | Percebi que a intenção da API era gerar 8 produtos a cada nova iteração, e não retornar aos 8 originais. Retirei a animação de show less, alterei o fetch da API reduzindo-o, fiz algumas mudanças que faltavam no CSS e agora o website roda versões minified do CSS e JS.
 
 ---
 
