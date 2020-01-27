@@ -211,7 +211,7 @@ main p, #share-news {
 
 #show-more-button {
 	position: relative;
-	margin-top: 20px;
+	margin-top: 50px;
 	width: 17rem;
 	height: 2.5rem;
 	font-size: 16px;
@@ -358,6 +358,16 @@ footer p {
 @media only screen and (max-width: 412px) {
 	header {
 		height: 35rem;
+	}
+
+	.fields input {
+		max-width: 15rem;
+	}
+}
+
+@media only screen and (max-width: 348px) {
+	.fields input {
+		max-width: 11rem;
 	}
 }
 
