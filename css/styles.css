@@ -5,15 +5,15 @@
 ***************/
 
 :root {
+	--bg-shadow: #00000030;
 	--dark-gray: #707070;
 	--light-gray: #888888;
-	--bg-shadow: #00000030;
 }
 
 body {
+	display: block;
 	margin: 0;
 	padding: 0;
-	display: block;
 	font-family: Roboto, sans-serif;
 }
 
@@ -24,44 +24,37 @@ body {
 ***************/
 
 header {
-	top: 0;
-	margin-top: 0;
-	display: block;
-	justify-content: center;
 	width: 100%;
 	height: 20rem;
-	background: var(--dark-gray);
+	display: block;
+	top: 0;
 	margin: auto;
+	background: var(--dark-gray);
 	text-transform: lowercase;
 	text-align: center;
 	font-size: 20px;
 	color: white;
 }
 
-header h1 strong {
-	font-weight: 700;
+header h1 {
 	font-size: 40px;
 	letter-spacing: 3px;
 }
 
-header h1 {
-	margin-top: -10px;
-}
-
 header h2 {
+	margin: 0 0 -25px 0;
+	padding-top: 50px;
 	font-size: 20px;
 	font-weight: 300;
-	margin-top: 0;
-	padding-top: 50px;
 	letter-spacing: 3px;
 }
 
 header p, #form-text {
-	text-transform: none;
+	margin: -10px 0 30px 0;
 	padding: 20px;
 	font-size: 16px;
-	margin: -20px 0 20px 0;
-	text-align: center;
+	font-weight: 300;
+	text-transform: none;
 }
 
 /***************
@@ -76,26 +69,26 @@ header p, #form-text {
 ***************/
 
 nav {
-	position: relative;
+	height: 50px;
+	margin: 20px;
 	display: flex;
+	position: relative;
 	flex-direction: row;
 	justify-content: center;
-	margin: 20px;
-	height: 50px;
 }
 
 nav a {
-	font-size: 14px;
-	color: var(--light-gray);
-	text-decoration: none;
-	background: white;
 	width: 160px;
 	height: 40px;
+	margin: 0 20px;
+	font-size: 14px;
+	line-height: 40px;
+	background: white;
 	border-radius: 4px;
+	color: var(--light-gray);
+	text-decoration: none;
 	text-transform: none;
 	box-shadow: 0 0 5px var(--bg-shadow);
-	line-height: 40px;
-	margin: 0 20px;
 }
 
 /***************
@@ -118,8 +111,8 @@ main {
 }
 
 main p, #share-news {
-	text-align: center;
 	margin-top: 50px;
+	text-align: center;
 	font-weight: 500;
 	font-size: 18px;
 	color: var(--light-gray);
@@ -141,8 +134,6 @@ main p, #share-news {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	margin-top: 20px;
-	background: white;
-	display: flex;
 	width: 80vw;
 	max-width: 900px;
 	height: auto;
@@ -150,9 +141,8 @@ main p, #share-news {
 }
 
 .product-container {
-	margin: 10px;
 	position: relative;
-	top: 0;
+	margin: 10px;
 	width: 200px;
 	height: 350px;
 	background: white;
@@ -162,7 +152,6 @@ main p, #share-news {
 .product-image {
 	background: center no-repeat;
 	box-sizing: border-box;
-	position: relative;
 	width: inherit;
 	height: 150px;
 }
@@ -196,17 +185,17 @@ main p, #share-news {
 }
 
 .buy-button, #show-more-button, #send-form {
-	cursor: pointer;
+	width: 100%;
+	height: 30px;
+	margin: 0;
 	position: absolute;
 	bottom: 0;
 	border-radius: 4px;
 	background: white;
-	width: 100%;
-	height: 30px;
-	margin: 0;
+	font-size: 16px;
 	line-height: 25px;
 	color: var(--light-gray);
-	font-size: 16px;
+	cursor: pointer;
 }
 
 #show-more-button {
@@ -267,6 +256,10 @@ form p {
 	line-height: 40px;
 }
 
+#error-box {
+	
+}
+
 /***************
 * 
 * End Form Tag
@@ -284,12 +277,12 @@ form p {
 ***************/
 
 footer {
+	width: 100%;
+	height: 10rem;
 	display: flex;
 	justify-content: center;
 	margin-top: 150px;
 	background: var(--dark-gray);
-	height: 10rem;
-	width: 100%;
 	text-align: center;
 }
 
@@ -339,7 +332,7 @@ footer p {
 
 @media only screen and (max-width: 720px) {
 	header {
-		height: 32rem;
+		height: 30rem;
 	}
 	
 	nav {

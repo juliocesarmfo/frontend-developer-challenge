@@ -39,7 +39,7 @@
 			<p id="form-text">Quer que seus amigos também ganhem a lista personalizada deles?
 			Preencha agora!</p>
 			<!-- NEWSLETTER FORM -->
-			<form id="newsletter-form" method="post">
+			<form name="newsletter-form" id="newsletter-form" method="post">
 				<div class="fields">
 					<p>Nome do seu amigo:</p>
 					<input type="text" pattern="^[a-zA-Z\u00C0-\u00FF\s]+$" minlength="1" maxlength="80"/>
@@ -49,7 +49,7 @@
 					<input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" minlength="5" maxlength="80"/>
 				</div>
 			</form>
-			<button id="send-form" type="submit" form="newsletter-form">Enviar Agora</button>
+			<button id="send-form" type="submit" form="newsletter-form" onclick="return submitForm()">Enviar Agora</button>
 		</main>
 		<!-- FOOTER -->
 		<footer>

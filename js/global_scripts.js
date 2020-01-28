@@ -26,4 +26,15 @@ function openMore(button) {
 	setTimeout(function() { button.disabled = false; }, 1000);
 }
 
+/* Function to check if form is empty */
+function submitForm() {
+	if (document.getElementsByTagName(`input`)[0].value === `` || document.getElementsByTagName(`input`)[1].value === ``) {
+		alert(`Preencha o formulário corretamente.`);
+		return false;
+	}
+	else {
+		return true;
+	}
+}
+
 onload = getURL;
